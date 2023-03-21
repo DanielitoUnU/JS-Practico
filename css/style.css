@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+section .cont-botones{
+    width: 40%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    border:  5px solid #84ced1;
+}
+
+section .cont-botones h2{
+    color: #cac081;
+    font-size: 50px;
+margin-bottom: 40px;
+border-bottom: #84ced1 2px solid;
+font-family: cursive;
+}
+
+section .cont-botones button{
+    padding: 20px 20px;
+    border-radius: 5px;
+    color: #cac081;
+    background: #0000;
+    margin: 12px;
+    border: #84ced1 2px solid;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+section .cont-figura{
+    width: 40%;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    border: #84ced1 5px solid;
+    border-radius: 20px;
+}
+
+section .cont-figura h2{
+    color: #cac081;
+    font-size: 50px;
+margin-bottom: 40px;
+border-bottom: #84ced1 2px solid;
+font-family: cursive;
+}
+
+#figura{
+    width: 200px;
+    height: 200px;
+    background-color: #cac081;
+    margin: 180px auto;
+    border-radius: 5px;
+    transition: 0.5s linear;
+}
+
+/* configuracion de rectangulo */
+
+#figura.circulo{
+    border-radius: 50%;
+    transition: .5s;
+    transform:  rotate(-360deg);
+}
+
+#figura.rectangulo{
+    width: 350px;
+    transition: .5s;
+}
+
+#figura.top{
+    transform: translateY(-100px);
+    transition: .5s;
+}
+
+#figura.izq{
+    transform: translateX(-100px);
+    transition: .5s;
+}
+
+#figura.der{
+    transform: translatex(100px);
+    transition: .5s;
+}
+
+#figura.abajo{
+    transform: translateY(100px);
+    transition: .5s;
+}
+
+#figura.diagonal{
+    transform: translate(100px, 100px);
+}
+
+#figura.imggif{
+background-image: url(https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2014/06/GIF.gif?fit=640%2C360&quality=80&ssl=1);
+background-size: 400px;
+background-position: -80px;
+}
+
+#figura.rombo{
+    transform: rotate(135deg);
+}
